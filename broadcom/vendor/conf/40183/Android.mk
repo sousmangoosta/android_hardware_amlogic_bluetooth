@@ -5,8 +5,6 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := bt_vendor.conf
 LOCAL_MODULE_CLASS := ETC
 
-LOCAL_MODULE_TAGS := eng
-
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 ifeq ($(shell test $(PLATFORM_SDK_VERSION) -ge 26 && echo OK),OK)
 LOCAL_PROPRIETARY_MODULE := true
